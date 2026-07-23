@@ -1,1 +1,136 @@
+{
+    "extensions.ignoreRecommendations": true,
+    "editor.mouseWheelZoom": true,
+    "update.mode": "none",
+    "extensions.autoCheckUpdates": false,
+    "extensions.autoUpdate": false,
+    "telemetry.telemetryLevel": "off",
+    "git.autofetch": false,
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/node_modules/**": true
+    },
+    "window.newWindowDimensions": "inherit",
+    "editor.allowVariableFonts": false,
+    "editor.minimap.enabled": false,
+    "editor.fontFamily": "Ubuntu Mono",
+    "editor.fontSize": 14,
+    "editor.renderWhitespace": "all",
+    "workbench.colorTheme": "Default High Contrast Light",
+    "workbench.colorCustomizations": {
+        "editor.background": "#eeeeee"
+    },
+    "editor.fontWeight": "500",
+    "emacs-mcx.useMetaPrefixEscape": true,
+    "workbench.editor.showTabs": "none",
+    "security.workspace.trust.untrustedFiles": "open",
+    "files.hotExit": "off",
+    "window.restoreWindows": "none",
+    "terminal.integrated.cwd": "${fileDirname}",
+    
+// Tab settings
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
 
+    "[python]": {
+        "editor.tabSize": 4
+    },
+    "[c]": {
+        "editor.tabSize": 2
+    },
+    "[cpp]": {
+        "editor.tabSize": 2
+    },
+    "[csharp]": {
+        "editor.tabSize": 2
+    },
+    "[fortran]": {
+        "editor.tabSize": 2
+    },
+    "[FortranFreeForm]": {
+        "editor.tabSize": 2
+    },
+    "[FortranFixedForm]": {
+        "editor.tabSize": 2
+    },
+    "[shellscript]": {
+        "editor.tabSize": 2
+    },
+    "[perl]": {
+        "editor.tabSize": 2
+    },
+// LaTex Workshop
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "lualatex",
+            "tools": ["lualatex", "lualatex"]
+        },
+        {
+            "name": "lualatex + pbibtex",
+            "tools": ["lualatex", "pbibtex", "lualatex", "lualatex"]
+        },
+        {
+            "name": "ptex2pdf",
+            "tools": ["ptex2pdf", "ptex2pdf"]
+        },
+        {
+            "name": "ptex2pdf + pbibtex",
+            "tools": ["ptex2pdf", "pbibtex", "ptex2pdf", "ptex2pdf"]
+        }
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "lualatex",
+            "command": "c:/texlive/2022/bin/win32/lualatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "ptex2pdf",
+            "command": "c:/texlive/2022/bin/win32/ptex2pdf",
+            "args": [
+                "-l",
+                "-ot",
+                "-synctex=1 -interaction=nonstopmode",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "pbibtex",
+            "command": "c:/texlive/2022/bin/win32/pbibtex",
+            "args": ["%DOCFILE%"]
+        }
+    ],
+    "latex-workshop.latex.autoBuild.run": "onSave",
+
+    "latex-workshop.view.pdf.viewer": "external",
+    "latex-workshop.view.pdf.external.viewer.command": "c:/Users/tsukagoshi/AppData/Local/SumatraPDF/SumatraPDF.exe",
+    "latex-workshop.view.pdf.external.viewer.args": [
+        "-forward-search", "%TEX%", "%LINE%",
+        "%PDF%"
+    ],
+    "latex-workshop.view.pdf.external.synctex.command": "c:/Users/tsukagoshi/AppData/Local/SumatraPDF/SumatraPDF.exe",
+    "latex-workshop.view.pdf.external.synctex.args": [
+        "-forward-search", "%TEX%", "%LINE%",
+        "%PDF%"
+    ],
+
+    "files.encoding": "utf8",
+    "chat.titleBar.signIn.enabled": false,
+    "window.commandCenter": false,
+    "workbench.browser.showInTitleBar": false,
+    "workbench.layoutControl.enabled": false,
+    "workbench.editor.editorActionsLocation": "hidden",
+    "workbench.secondarySideBar.defaultVisibility": "visible",
+    "github.copilot.nextEditSuggestions.enabled": false,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "python": false
+    }
+}
