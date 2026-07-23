@@ -1,0 +1,23 @@
+// 既定値を上書きするには、このファイル内にキー バインドを挿入します
+[
+    {
+        "key": "ctrl+c left",
+        "command": "workbench.action.navigateLeft",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+c down",
+        "command": "workbench.action.navigateDown",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+c up",
+        "command": "workbench.action.navigateUp",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+c right",
+        "command": "workbench.action.navigateRight",
+        "when": "editorTextFocus"
+    }
+]
